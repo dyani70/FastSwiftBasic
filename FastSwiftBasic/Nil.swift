@@ -8,10 +8,28 @@
 import SwiftUI
 
 struct Nil: View {
+    
+    var name: String = "Dyani"
+    var petName: String? //이름이 있을수 있고 없을 수 있음
+    
+    var bami: String = "Bami"
+    var petName2: String = "coco"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+//            Text("이름은 \(name) 펫 네임은 \(petName) 입니다")
+            Text("이름은 \(bami) 펫 네임은 \(petName2) 입니다")
+        }
+        .onAppear {
+            print("이름은 \(name) 펫 네임은 \(petName)입니다")
+            
+            print("이름은 \(bami) 펫 네임은 \(petName2)입니다")
+        }
+        
     }
 }
+
+
 
 #Preview {
     Nil()

@@ -36,6 +36,7 @@ struct Exception: View {
             } label: {
                 Text("나누기")
             }
+            
         }
     }
     
